@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
 
-* {
+*,
+*::before,
+*::after {
 	font-family: "Poppins", sans-serif;
 	margin: 0;
 	padding: 0;
@@ -149,6 +151,61 @@ nav .nav-links .nav-item:hover .sub-menu ul li {
 	border-bottom: 1px solid var(--eco-color);
 }
 
+/* Hamburger Menu */
+.hamburger {
+	width: 3.5rem;
+	height: 1.5rem;
+	position: relative;
+	cursor: pointer;
+	line-height: 5rem;
+	z-index: 10;
+	display: none;
+}
+
+.hamburger .line {
+	width: 100%;
+	height: 2px;
+	background-color: var(--light-color);
+	position: absolute;
+	display: none;
+	right: 100%;
+	transition: all 300ms ease-in;
+}
+
+.scrolling-active .hamburger .line {
+	background-color: var(--eco-color);
+}
+
+.hamburger .line:nth-child(1) {
+	top: 0;
+}
+
+.hamburger .line:nth-child(2) {
+	top: 50%;
+	margin-top: -3px;
+	width: 2.8rem;
+}
+
+.hamburger .line:nth-child(3) {
+	top: 100%;
+	margin-top: -5px;
+	width: 2rem;
+}
+
+.hamburger.active .line:nth-child(1) {
+	transform: translateY(0.5rem) rotate(45deg);
+	width: 2.05rem;
+}
+
+.hamburger.active .line:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+	transform: translateY(-0.8rem) rotate(-45deg);
+	width: 2rem;
+}
+
 @media screen and (max-width: 1024px) {
 	nav .nav-links .nav-item:hover .sub-menu {
 		width: 13%;
@@ -159,8 +216,62 @@ nav .nav-links .nav-item:hover .sub-menu ul li {
 }
 
 @media screen and (max-width: 768px) {
-	.nav {
+	nav .nav-links {
 		position: fixed;
+		overflow: hidden;
+		width: 100%;
+		height: 100vh;
+		flex-direction: column;
+		align-items: center;
+		left: 0;
+		top: -100vh;
+		transition: all 300ms ease-in;
+		background-color: var(--eco-color);
+	}
+	nav .logo {
+		z-index: 10;
+	}
+	nav .nav-links.active {
+		top: 0;
+	}
+
+	nav .nav-links a {
+		color: var(--light-color);
+	}
+
+	nav .nav-links .nav-item:hover .sub-menu {
+		width: 30vw;
+		margin-left: -3.8rem;
+	}
+	nav .nav-links li:nth-child(4) {
+		margin-top: 4rem;
+	}
+	.hamburger {
+		display: block;
+	}
+	.hamburger .line {
+		display: block;
+	}
+	nav .nav-links .nav-link {
+		opacity: 0;
+		text-align: center;
+		transform: translateX(100%);
+		transition-duration: 0.5s;
+		transition-timing-function: cubic-bezier(0.75, -0.015, 0.565, 1.055);
+		transition-property: opacity, transform;
+	}
+
+	nav .nav-links.active .nav-link {
+		transition-delay: calc(0.065s * var(--i));
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@media screen and (max-width: 500px) {
+	nav .nav-links .nav-item:hover .sub-menu {
+		width: 60vw;
+		margin-left: -3.8rem;
 	}
 }
 

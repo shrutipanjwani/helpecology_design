@@ -5,6 +5,23 @@ window.addEventListener("scroll", function () {
 	nav.classList.toggle("scrolling-active", windowPosition);
 });
 
+// Navbar Responsiveness
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector("nav .nav-links");
+
+hamburger.addEventListener("click", () => {
+	hamburger.classList.toggle("active");
+	nav.classList.toggle("active");
+	window.scrollTo(0, 0);
+});
+
+document.addEventListener("click", (e) => {
+	if (e.target.closest("nav .nav-links")) {
+		hamburger.classList.remove("active");
+		nav.classList.remove("active");
+	}
+});
+
 // Images Scroll Reveal Animation
 let imageItems = [...document.querySelectorAll(".img-wrap")];
 

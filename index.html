@@ -7,26 +7,25 @@
 		<link rel="stylesheet" href="./css/style.css" />
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css"
 		/>
 		<link rel="shortcut icon" href="./assets/greenbg.jpg" type="image/x-icon" />
 		<title>Helpecology</title>
 	</head>
 	<body>
 		<header>
-			<nav class="nav">
+			<nav class="nav" id="nav">
 				<div class="logo">
 					<a href="index.html"><h2>helpecology.</h2></a>
 				</div>
-
 				<ul class="nav-links">
-					<li class="nav-item">
+					<li class="nav-item nav-link" style="--i: 0">
 						<a href="#home">Home</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item nav-link" style="--i: 1">
 						<a href="#about">About Competition</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item nav-link" style="--i: 2">
 						<a href="#gallery">Gallery</a>
 						<div class="sub-menu">
 							<ul>
@@ -36,12 +35,17 @@
 							</ul>
 						</div>
 					</li>
-					<li>
+					<li class="nav-link" style="--i: 3">
 						<a href="#contact">
 							<button class="btn">Contact</button>
 						</a>
 					</li>
 				</ul>
+				<div class="hamburger" id="hamburger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
 			</nav>
 		</header>
 		<main>
@@ -64,9 +68,9 @@
 				</div>
 				<div class="social-icons">
 					<ul>
-						<li><i class="fab fa-instagram"></i></li>
-						<li><i class="fab fa-linkedin"></i></li>
-						<li><i class="fab fa-twitter"></i></li>
+						<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+						<li><i class="fa fa-linkedin"></i></li>
+						<li><i class="fa fa-twitter"></i></li>
 					</ul>
 				</div>
 			</div>
@@ -79,7 +83,7 @@
 
 					<div class="about-video">
 						<div class="video">
-							<i class="fas fa-play"></i>
+							<i class="fa fa-play"></i>
 							<p>watch a review</p>
 						</div>
 					</div>
@@ -249,9 +253,9 @@
 						<h3>Follow Us</h3>
 						<br />
 						<div class="social-links">
-							<a href="#"><i class="fab fa-instagram"></i></a>
-							<a href="#"><i class="fab fa-linkedin"></i></a>
-							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
 						</div>
 					</div>
 				</div>
