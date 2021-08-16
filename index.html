@@ -16,38 +16,51 @@
 		<header>
 			<nav class="nav">
 				<div class="logo">
-					<h2>helpecology.</h2>
+					<a href="index.html"><h2>helpecology.</h2></a>
 				</div>
+
 				<ul class="nav-links">
 					<li class="nav-item">
-						<a href="index.html">Home</a>
+						<a href="#home">Home</a>
 					</li>
 					<li class="nav-item">
 						<a href="#about">About Competition</a>
 					</li>
 					<li class="nav-item">
 						<a href="#gallery">Gallery</a>
+						<div class="sub-menu">
+							<ul>
+								<li style="--i: 0"><a href="#">Gallery 1</a></li>
+								<li style="--i: 1"><a href="#">Gallery 2</a></li>
+								<li style="--i: 2"><a href="#">Gallery 3</a></li>
+							</ul>
+						</div>
 					</li>
 					<li>
-						<a href="#register">
-							<button class="btn">Register</button>
+						<a href="#contact">
+							<button class="btn">Contact</button>
 						</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<div class="banner">
+			<div class="banner" id="home">
 				<br />
 				<br />
 				<div class="text">
-					<h1>ecology</h1>
-					<p
-						>We offer to invest any amount of money to anyone who wants to, so
-						little by little you can collect the necessary amount of funds.</p
-					>
-					<br />
-					<button class="btn">Donate Now</button>
+					<div class="content">
+						<h1>Ecology</h1>
+						<h1>Ecology</h1>
+					</div>
+					<div class="content-below">
+						<p
+							>We offer to invest any amount of money to anyone who wants to, so
+							little by little you can collect the necessary amount of funds.</p
+						>
+						<br />
+						<button class="btn">Register Now </button>
+					</div>
 				</div>
 				<div class="social-icons">
 					<ul>
@@ -57,8 +70,193 @@
 					</ul>
 				</div>
 			</div>
-			<section style="height: 100vh"> </section>
+
+			<div class="about-section" id="about">
+				<div class="about-box">
+					<div class="about-img">
+						<img src="./assets/about.png" width="70%" />
+					</div>
+
+					<div class="about-video">
+						<div class="video">
+							<i class="fas fa-play"></i>
+							<p>watch a review</p>
+						</div>
+					</div>
+
+					<div class="about-desc">
+						<div class="about-desc-content">
+							<div class="desc-content-about">
+								<h1>About Us</h1>
+								<span>get ready to step into a new world</span>
+								<p
+									>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Consequatur hic minus nihil obcaecati, ratione repellendus
+									saepe sint tenetur totam ullam. Accusantium aspernatur ducimus
+									impedit perferendis quisquam repellendus similique ullam
+									vitae!</p
+								>
+							</div>
+
+							<div class="about-view-more">
+								<p>view more</p>
+								<div class="view-more-block"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="projects" id="gallery">
+				<h1>Projects</h1>
+				<section class="project-section">
+					<div class="product-desc">
+						<h2>Money Plant</h2>
+						<p
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+							molestias et, praesentium quaerat, quod iste cumque nam sint
+							perferendis veritatis quibusdam provident culpa. Dolores, velit
+							quam animi deserunt doloremque vitae.</p
+						>
+						<button class="donation-btn"> Donate Now </button>
+					</div>
+					<div class="img-wrap">
+						<div class="img"></div>
+					</div>
+				</section>
+				<section class="project-section">
+					<div class="product-desc">
+						<h2>Money Plant</h2>
+						<p
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+							molestias et, praesentium quaerat, quod iste cumque nam sint
+							perferendis veritatis quibusdam provident culpa. Dolores, velit
+							quam animi deserunt doloremque vitae.</p
+						>
+						<button class="donation-btn"> Donate Now </button>
+					</div>
+					<div class="img-wrap">
+						<div class="img"></div>
+					</div>
+				</section>
+				<section class="project-section">
+					<div class="product-desc">
+						<h2>Money Plant</h2>
+						<p
+							>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+							molestias et, praesentium quaerat, quod iste cumque nam sint
+							perferendis veritatis quibusdam provident culpa. Dolores, velit
+							quam animi deserunt doloremque vitae.</p
+						>
+						<button class="donation-btn"> Donate Now </button>
+					</div>
+					<div class="img-wrap">
+						<div class="img"></div>
+					</div>
+				</section>
+			</div>
+			<div class="contact" id="contact">
+				<h1>Contact Us</h1>
+				<div class="background"></div>
+				<form action="index.html" method="GET">
+					<div class="row">
+						<div class="col">
+							<div class="inputBox">
+								<input type="text" required />
+								<span class="text">First Name</span>
+								<span class="line"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="inputBox">
+								<input type="text" required />
+								<span class="text">Last Name</span>
+								<span class="line"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="inputBox">
+								<input type="email" required />
+								<span class="text">Email</span>
+								<span class="line"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="inputBox">
+								<input type="tel" required />
+								<span class="text">Mobile</span>
+								<span class="line"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="inputBox textarea">
+								<textarea required></textarea>
+								<span class="text">Type your message here...</span>
+								<span class="line"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<input type="submit" value="Send" class="donation-btn" />
+						</div>
+					</div>
+				</form>
+			</div>
 		</main>
+
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="row">
+					<div class="footer-col">
+						<h3>Organisation</h3>
+						<br />
+						<ul>
+							<li><a href="#">about us</a></li>
+							<li><a href="#">our services</a></li>
+							<li><a href="#">privacy policy</a></li>
+							<li><a href="#">affiliate program</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h3>Useful Links</h3>
+						<br />
+						<ul>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">payment options</a></li>
+							<li><a href="#">returns</a></li>
+							<li><a href="#">status</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h3>Projects</h3>
+						<br />
+						<ul>
+							<li><a href="#">money plant</a></li>
+							<li><a href="#">tree plantation</a></li>
+							<li><a href="#">hebibcus plant</a></li>
+							<li><a href="#">rose plant</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h3>Follow Us</h3>
+						<br />
+						<div class="social-links">
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script src="/js/app.js"></script>
 	</body>
 </html>
